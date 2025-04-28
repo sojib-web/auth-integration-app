@@ -33,6 +33,19 @@ const Navbar = () => {
       <li className="btn btn-ghost text-xl">
         <NavLink to="/signup">SignUp</NavLink>
       </li>
+      <li className="btn btn-ghost text-xl">
+        <NavLink to="/dashboard">Dashboard</NavLink>
+      </li>
+      {user && (
+        <>
+          <li className="btn btn-ghost text-xl">
+            <NavLink to="/orders">Orders</NavLink>
+          </li>
+          <li className="btn btn-ghost text-xl">
+            <NavLink to="/profile">Profile</NavLink>
+          </li>
+        </>
+      )}
     </>
   );
   return (
